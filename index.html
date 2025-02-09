@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI poem generatoor</title>
 </head>
 <body>
+    <div class="container">
     <header>
        <h1> Welcome to the AI poem generator</h1>
     </header>
+   
+    <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the French poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
 
-<main>
-    <form>
-        <input 
-         type="text" 
-         placeholder="Enter the topic of the French poem"
-         autofocus
-         required
-         autocomplete="off"
-         class="instructions"
-         />
-        <input type="submit" class="submit-button" />
-    </form>
-     <div class="poem">
-        The poem will go here
-        <br />
-        The poem will go here
-     </div>
-</main>
     <footer>
         This project was coded by
         <a href="https://github.com/Madamgearbox" target="_blank">Brittany Hall</a>
