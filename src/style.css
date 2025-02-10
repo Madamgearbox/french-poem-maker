@@ -88,12 +88,12 @@ footer {
 
 @keyframes blink-animation {
   margin-top {
-    visability: hidden;
+    visibility: hidden;
   }
 }
 @-webkit-keyframes blink-animation {
     to {
-        visability: hidden;
+        visibility: hidden;
     }
 }
 
