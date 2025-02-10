@@ -1,75 +1,99 @@
 body {
-    background-color: rgb(252, 203, 252);
-    font-family:Arial, Helvetica, sans-serif;
-
+  background-color: rgb(252, 203, 252);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    margin: 120px auto;
-    max-width: 600px;
+  margin: 120px auto;
+  max-width: 600px;
 }
 
 header {
-    margin-bottom: 30px;
-    
+  margin-bottom: 30px;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 1.5;
-    color: rgb(138, 45, 226);
-    text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(138, 45, 226);
+  text-align: center;
 }
 
+.form-container {
+  background-color: rgb(178, 120, 232);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px, 20px, 60px rgba(65, 59, 100, 0.08);
+  padding: 15px 20px;
+}
 
 form {
-    padding: 30px;
-    background-color: rgb(178, 120, 232);
-    box-shadow: 0px, 20px, 60px, rgba(65, 50, 100, 0.08);
-    border-radius: 10px;
-    display: flex;
-    margin-bottom: 30px;
-   
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5px;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .instructions {
-    padding: 16px;
-    border: 1px solid rgba(39, 33, 66, 0.5);
-    width: 80%;
-    font-size: 16px;
-    border-radius: 50px;
-    line-height: 20px;
-    color: rgb(138, 6, 101);
-    
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: rgb(87, 45, 129);
 }
 
 .submit-button {
-    margin-left: 10px;
-    background: rgb(195, 255, 195);
-    color: rgb(87, 45, 129);
-    border: none;
-    width: 150px;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 14px 24px;
-    
-
+  margin-left: 10px;
+  background: #c3ffc3;
+  color: rgb(87, 45, 129);
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
 }
 
 .poem {
-    font-size: 16px;
-    background-color: rgb(178, 120, 232);
-    padding: 20px;
-    line-height: 2;
-    border-left: 3px solid;
-    box-shadow: 0px, 4px, 30px, rgba(255, 255, 255, 0.08);
-    
+  font-size: 16px;
+  background-color: rgb(178, 120, 232);
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid;
+  box-shadow: 0px, 4px, 30px, rgba(255, 255, 255, 0.08);
+  color: #c3ffc3;
 }
 
-footer {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 30px;
-    padding: 200px;
+.hidden {
+  display: none;
 }
+
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  padding: 200px;
+}
+
+.generating {
+  animation: blink is steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  margin-top {
+    visability: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visability: hidden;
+    }
+}
+
